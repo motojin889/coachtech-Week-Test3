@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    //問題１
+    const array = [2, 4, 7, 5, 4, 3, 8];
+    const  result = array.filter(function (value, index, array) {
+        return array.indexOf(value) === index;
+      });
+      console.log (result);
+
+      //問題２
+      function leapYear(Year){
+        if (Year%4 ===0 && Year%100 !== 0 || Year%400 ===0 ){
+          return console.log ("うるう年です。");
+      }
+        else{
+          return console.log("うるう年ではありません。");
+        }
+      };
+      leapYear (2020);
+      leapYear (2021);
+
+  </script>
+</body>
+</html>
